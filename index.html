@@ -757,6 +757,83 @@
     grid-template-columns: 1fr;
   }
 }
+    /* How I Work */
+
+.workflow-section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 60px 30px;
+}
+
+.section-heading {
+  max-width: 850px;
+  margin-bottom: 55px;
+}
+
+.section-heading h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.section-heading p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.72;
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.workflow-step {
+  position: relative;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.workflow-step span {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  opacity: 0.45;
+}
+
+.workflow-step h3 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+}
+
+.workflow-step p {
+  margin: 0;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .workflow-section {
+    margin: 60px auto;
+    padding: 40px 20px;
+  }
+
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 
@@ -800,7 +877,7 @@
           </h1>
 
           <div class="hero-subtitle">
-            I build software that simplifies complex business operations.
+            I turn complex business processes into practical software systems.
           </div>
 
           <p class="hero-description">
@@ -850,14 +927,15 @@
             </p>
 
             <p>
-              My experience covers frontend development, backend and API
-              development, database design, system analysis, deployment,
-              workflow automation, and integration with external systems.
+              My work often starts before development: understanding business requirements,
+              analyzing workflows, designing system structure, and translating operational
+              needs into technical solutions.
             </p>
 
             <p>
-              I enjoy turning complicated real-world business processes into
-              practical and reliable software that people can actually use.
+              I work across the full software lifecycle — from analysis and planning
+              to frontend and backend development, system integration, deployment,
+              and technical coordination.
             </p>
 
           </div>
@@ -1249,6 +1327,82 @@
 
 </section>
 
+    <!-- How I Work -->
+<section class="workflow-section" id="how-i-work">
+
+  <div class="section-heading">
+    <div class="project-eyebrow">My Approach</div>
+
+    <h2>
+      How I Work
+    </h2>
+
+    <p>
+      I approach software projects from both business and technical perspectives,
+      connecting requirements, workflows, development, and delivery.
+    </p>
+  </div>
+
+  <div class="workflow-grid">
+
+    <div class="workflow-step">
+      <span>01</span>
+      <h3>Understand</h3>
+      <p>
+        Understand the business problem, users, requirements,
+        constraints, and existing processes.
+      </p>
+    </div>
+
+    <div class="workflow-step">
+      <span>02</span>
+      <h3>Analyze</h3>
+      <p>
+        Analyze business workflows and convert operational requirements
+        into clear system requirements.
+      </p>
+    </div>
+
+    <div class="workflow-step">
+      <span>03</span>
+      <h3>Design & Plan</h3>
+      <p>
+        Design system structure, workflows, integrations, priorities,
+        and technical implementation plans.
+      </p>
+    </div>
+
+    <div class="workflow-step">
+      <span>04</span>
+      <h3>Build</h3>
+      <p>
+        Develop frontend, backend, APIs, authentication,
+        permissions, and business logic.
+      </p>
+    </div>
+
+    <div class="workflow-step">
+      <span>05</span>
+      <h3>Integrate</h3>
+      <p>
+        Connect the application with external services,
+        APIs, accounting systems, attendance systems, and messaging platforms.
+      </p>
+    </div>
+
+    <div class="workflow-step">
+      <span>06</span>
+      <h3>Deploy & Improve</h3>
+      <p>
+        Deploy the system, coordinate implementation,
+        collect feedback, and continuously improve the solution.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
     <!-- EXPERIENCE -->
     <section id="experience">
 
@@ -1363,50 +1517,50 @@
         <div class="services-grid">
 
           <div class="service">
+            <h3>Business & System Analysis</h3>
+            <p>
+              Turning real-world business processes into clear software
+              requirements, workflows, and system structures.
+            </p>
+          </div>
+
+          <div class="service">
+            <h3>Technical Project Management</h3>
+            <p>
+              Planning, coordinating, and following software projects
+              from requirements analysis through implementation and deployment.
+            </p>
+          </div>
+
+          <div class="service">
             <h3>Custom Business Applications</h3>
             <p>
-              Web applications designed around specific business processes
-              and operational requirements.
+              Building internal management systems and workflow-based
+              applications tailored to real operational needs.
             </p>
           </div>
 
           <div class="service">
-            <h3>Internal Management Systems</h3>
+            <h3>Full-Stack Development</h3>
             <p>
-              Internal platforms for managing employees, operations,
-              workflows, inventory, sales, and business data.
+              Developing modern web applications across frontend,
+              backend, APIs, authentication, and databases.
             </p>
           </div>
 
           <div class="service">
-            <h3>Workflow Automation</h3>
+            <h3>System Integration</h3>
             <p>
-              Turning manual and interconnected business processes into
-              structured digital workflows.
+              Connecting business applications with accounting systems,
+              attendance devices, SMS platforms, and external APIs.
             </p>
           </div>
 
           <div class="service">
-            <h3>API &amp; System Integration</h3>
+            <h3>Deployment & Infrastructure</h3>
             <p>
-              Connecting business applications with external services,
-              accounting systems, APIs, and operational tools.
-            </p>
-          </div>
-
-          <div class="service">
-            <h3>Full-Stack Web Development</h3>
-            <p>
-              Frontend, backend, databases, APIs, authentication,
-              authorization, and deployment.
-            </p>
-          </div>
-
-          <div class="service">
-            <h3>Technical Project Coordination</h3>
-            <p>
-              Supporting system analysis, technical decisions, development
-              coordination, and delivery.
+              Deploying and maintaining production applications using
+              Linux, Nginx, Docker, and related infrastructure.
             </p>
           </div>
 
